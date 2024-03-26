@@ -1,3 +1,8 @@
+/*
+  Лабораторная работа No4
+  Обычные try/catch/finally.
+ */
+
 try {
   throw new Error("test");
 } catch (error) {

@@ -1,4 +1,10 @@
-// Main module
+/*
+  Лабораторная работа No8
+  Программа для вычисления площади треугольника и расстояния между точками.
+  Файл с моковыми данными: file.txt.
+  Результаты вычислений выведены в консоль.
+ */
+
 import fs from "node:fs";
 
 const fileContent = fs.readFileSync(__dirname +"/file.txt", "utf8");
@@ -12,7 +18,8 @@ for (let i = 0; i < coordinates.length - 2; i++) {
   console.log(`Area of triangle with points ${triangle} is ${area}`);
 }
 
-// Distance module
+// (Условно в разных файлах, не дробил для того что бы не плодить множество новых файлов)
+
 function calculateDistance(
   point1: [number, number],
   point2: [number, number]
@@ -22,7 +29,6 @@ function calculateDistance(
   return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
 }
 
-// Triangle module
 function calculateTriangleArea(
   points: [[number, number], [number, number], [number, number]]
 ): number {

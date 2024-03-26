@@ -1,3 +1,8 @@
+/*
+  Лабораторная работа No5/4
+  Программа для вычисления корней квадратного уравнения.
+ */
+
 function solveQuadraticEquation(a: number, b: number, c: number): number[] {
   const discriminant = b * b - 4 * a * c;
 

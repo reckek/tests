@@ -1,3 +1,11 @@
+/*
+  Лабораторная работа No7/1
+  Компилятор арифметических выражений.
+
+  Код сгенерирован неиросетью. Неправильные выражения возвращают NaN.
+  Так же как баг можно выделить такую вещь как выражение "2+(-5)" где (-5) считается неверным и выбрасывается ошибка.
+  Результаты вычислений выведены в консоль.
+*/
 class ArithmeticCompiler {
   private static readonly OPERATORS: string[] = ['+', '-', '*', '/'];
 
@@ -116,4 +124,4 @@ class ArithmeticCompiler {
 }
 
 const compiler = new ArithmeticCompiler();
-console.log(compiler.compile('2+5*(10-8)')); // Example usage
+console.log(compiler.compile('2+5*(10-8)'));

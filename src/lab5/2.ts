@@ -1,3 +1,8 @@
+/*
+  Лабораторная работа No5/2
+  Программа для вычисления точки пересечения двух прямых
+ */
+
 function calculateIntersectionPoint(A: number, B: number, C: number, D: number, E: number, F: number): { x: number, y: number } {
     // Solve the system of linear equations Ax + By = C and Dx + Ey = F
     const x = (C * E - B * F) / (A * E - B * D);
